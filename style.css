@@ -1,0 +1,578 @@
+/* GENERAL */
+body{
+    background-color: #fff0f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #fdbebd;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #fdbebd;
+    text-align: center;
+    padding: 19px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* HOME */ 
+.logo {
+    height: 130px;
+    width: auto;
+}
+
+.nav1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navLinks a:hover {
+    color:#ffbdd7;
+}
+
+.hero {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    max-height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+      
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(253, 190, 189, 0.8);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-indicators button {
+    background-color: #fdbebd;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators button.active {
+    background-color: #ff69b4;
+}
+
+.inicio {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.inicio .red-item img {
+    max-width: 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.inicio h1 {
+    color: #fdbebd;
+    font-size: 2.5rem;
+    margin: 20px 0 10px 0;
+}
+
+.inicio h2 {
+    color: #fdbebd;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 10px 0 30px 0;
+}
+
+.contenido-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.img-productos-link {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.img-productos {
+    max-width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+.img-productos-link:hover {
+    transform: scale(1.05);
+}
+
+.presentacion-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.presentacion-texto p {
+    color: #555;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* CONTACTO */
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.navLinks2{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks2 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navLinks2 a:hover {
+    color: #ffbdd7;
+}
+
+.contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #fdbebd;
+    font-size: 2.2rem;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contacto label {
+    text-align: left;
+    font-weight: bold;
+    color: #d48a8a;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 10px;
+    border: 1px solid #f3c7cf;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contacto button {
+    background-color: #fdbebd;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #ff8fb5;
+}
+
+.mensaje-confirmacion {
+    margin-top: 15px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.redes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.redes h3 {
+    color: #fdbebd;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-top: 80px;
+}
+
+.red-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffe4ec;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #d86c93;
+    font-weight: 600;
+    width: 220px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.red-item img {
+    width: 28px;
+    height: 28px;
+}
+
+.red-item:hover {
+    background-color: #ffbdd7;
+    transform: scale(1.03);
+}
+
+/* PRODUCTOS */
+.products {
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    padding: 40px 0 10px;
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fdbebd;
+}
+
+.section-title p {
+    margin: 8px 0 0;
+    color: #d86c93;
+    font-size: 1.2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 30px 0 60px;
+    margin: 0;
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(253, 190, 189, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(255, 105, 180, 0.4);
+}
+
+.product-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.product-title {
+    display: block;
+    color: #d86c93;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 6px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.product-title:hover {
+    color: #ff69b4;
+}
+
+.product-star {
+    color: #ffd700;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.product-star i {
+    margin: 0 2px;
+}
+
+.product-price {
+    margin-top: 10px;
+}
+
+.product-price strong {
+    color: #fdbebd;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        height: 100px;
+    }
+    
+    .navLinks {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navLinks a {
+        font-size: 16px;
+    }
+    
+    .hero {
+        padding: 10px;
+    }
+    
+    .carousel-item img {
+        height: 350px;
+    }
+    
+    .inicio h1 {
+        font-size: 2rem;
+    }
+    
+    .inicio h2 {
+        font-size: 1.2rem;
+    }
+    
+    .contenido-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .presentacion-texto {
+        text-align: center;
+    }
+    
+    .presentacion-texto p {
+        font-size: 18px;
+    }
+    
+    .contacto {
+        padding: 15px;
+        margin: 30px auto;
+    }
+    
+    .contacto h2 {
+        font-size: 1.8rem;
+    }
+    
+    .redes h3 {
+        font-size: 1.3rem;
+    }
+    
+    .red-item {
+        width: 200px;
+        padding: 10px 15px;
+    }
+    
+    .products {
+        padding: 30px 15px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .product-image img {
+        height: 250px;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 80px;
+    }
+    
+    .navLinks {
+        gap: 10px;
+    }
+    
+    .navLinks a {
+        font-size: 14px;
+    }
+    
+    .hero {
+        padding: 5px;
+    }
+    
+    .carousel-item img {
+        height: 250px;
+    }
+    
+    .inicio {
+        padding: 20px 15px;
+    }
+    
+    .inicio h1 {
+        font-size: 1.5rem;
+    }
+    
+    .inicio h2 {
+        font-size: 1rem;
+    }
+    
+    .img-productos {
+        max-width: 150px;
+    }
+    
+    .presentacion-texto p {
+        font-size: 16px;
+    }
+    
+    .contacto {
+        padding: 10px;
+        margin: 20px 10px;
+    }
+    
+    .contacto h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contacto input,
+    .contacto textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .contacto button {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .redes h3 {
+        font-size: 1.2rem;
+    }
+    
+    .red-item {
+        width: 180px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .red-item img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .navLinks2 {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navLinks2 a {
+        font-size: 14px;
+    }
+    
+    .products {
+        padding: 20px 10px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 0 40px;
+    }
+    
+    .product-image img {
+        height: 220px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title p {
+        font-size: 1rem;
+    }
+    
+    .product-title {
+        font-size: 1rem;
+    }
+    
+    .product-price strong {
+        font-size: 1.3rem;
+    }
+}

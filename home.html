@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnolia - INICIO</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <img src="img/logo.png" alt="Logo Magnolia" class="logo">
+            <ul class="navLinks">
+                <li><a href="home.html">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/foto1.png" class="d-block w-100" alt="Carrusel 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/foto2.png" class="d-block w-100" alt="Carrusel 2">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        <section class="inicio">
+            <h1>Accesorios hechos para cuidar tu pelo</h1>
+            <h2>Accesorios que enamoran, cuidados que se sienten.</h2>
+            <div class="contenido-flex">
+                <a href="productos.html" class="img-productos-link">
+                    <img src="img/botonProductos.png" alt="Ver productos" class="img-productos">
+                </a>
+
+                <div class="presentacion-texto">
+                    <p>
+                        Magnolia es un espacio dedicado a la creación de accesorios para el cabello elaborados de manera artesanal. Cada pieza combina suavidad, materiales delicados y un diseño pensado para acompañar el cuidado diario sin dañar ni generar fricción. Nuestro objetivo es que cada detalle aporte comodidad y belleza, transformando lo simple en especial.
+                    </p>
+                </div>
+            </div>
+            <div class="redes">
+                <h3>Seguinos en nuestra red social más activa:</h3>
+                <a href="https://www.instagram.com/magnolia.03_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="red-item">
+                    <img src="img/iconoInsta.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Magnolia | Accesorios de pelo</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
